@@ -1,0 +1,53 @@
+h1{
+    padding:10px 10px 10px 10px;
+  }
+  
+  th {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  table{
+    overflow: auto;
+  }
+  
+  td {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(243, 209, 209);
+  }
+  
+  th {
+    background-color: rgb(213, 84, 84);
+    color: white;
+    font-size: 30px;
+  }
+  
+  
+  .button {
+    margin: 125px;
+    background-color: rgb(247, 180, 180); 
+    border: none;
+    color: white;
+    padding:20px 20px 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+  }
+  
+  
+  
+  .title-green{
+  color: green;
+  }
+  
+  .title-red{
+  color: red;
+  }
+
+  

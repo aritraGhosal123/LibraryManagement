@@ -1,0 +1,46 @@
+<html>
+
+<h1 style="font-size:60px" >{{Title}}</h1>
+
+<div style = "float:right">
+    <button class="button" (click)="addPublishers()"> Add Publisher</button>
+</div>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px  black;
+        border-collapse: collapse;
+    }
+    </style>
+</head>
+
+<body style="text-align: center">
+    <table style="inline-size:95%">
+        <thead>
+            <tr style="height:80px">
+                <th style="width:7%">Id</th>
+                <th style="width:19%">Name</th>
+                <th style="width:50%">Address</th>
+                <th style="width:14%">Phone</th>
+                <th style="width:20%">Email</th>
+                
+            </tr>
+        </thead>
+        <tbody style="height:60px">
+            <tr *ngFor="let publishers of publishers">
+              <td>{{publishers.id}}</td> 
+              <td>{{publishers.name}}</td> 
+              <td>{{publishers.address}}</td> 
+              <td>{{publishers.phone}}</td> 
+              <td>{{publishers.email}}</td> 
+            
+            </tr>
+          </tbody>
+      </table>
+  </body>
+  
+   
+  </html>

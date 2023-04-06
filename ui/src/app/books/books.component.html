@@ -1,0 +1,58 @@
+<html>
+   
+<html>
+    
+<h1 style="font-size:60px" >{{Title}}</h1>
+
+<div style = "float:right">
+    <button class="button" (click)="addBooks()"> Add Book</button>
+</div>
+
+<head> 
+    <style>
+    table,
+    th,
+    td {
+        border: 1px #7a0292;
+        border-collapse: collapse;
+    }
+    </style>
+</head>
+
+<body style="text-align: center">
+    <table style="width:65%; ">
+        <thead>
+            <tr style="height:120px">
+                <!--<th style="width:7%">Id</th>-->
+                <th style="width:13%">Title</th>
+                <th style="width:12%">Author</th>
+                <th style="width:12%">ISBN</th>
+                <th style="width:10%">Publication Date</th>
+                <th style="width:12%">Publisher</th>
+                <th style="width:5%">Copies</th>
+                <th style="width:10%">Category</th>
+                <th style="width:8%">Genre</th>
+                <th style="width:8%" >Sub-genre</th>
+                <th style="width:8%">Delete</th>
+            </tr>
+        </thead>
+        <tbody style="height:60px">
+          <tr *ngFor="let book of books">
+            <!--<td>{{books.id}}</td>-->
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.isbn}}</td>
+            <td>{{book.publicationDate }}</td>
+            <td>{{book.publisher}}</td>
+            <td>{{book.copies}}</td>
+            <td>{{book.category }}</td>
+            <td>{{book.genre }}</td>
+            <td>{{book.subgenre }}</td>
+            <td>
+                <button (click)="deleteBook(book.id)">Delete</button>
+              </td>
+          
+          </tr>
+        </tbody>
+    </table>
+</body>

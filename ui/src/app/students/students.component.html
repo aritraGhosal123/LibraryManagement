@@ -1,0 +1,47 @@
+<html>
+
+<h1 style="font-size:60px" >{{Title}}</h1>
+
+<div style = "float:right">
+    <button class="button" (click)="addStudents()"> Add Student</button>
+</div>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px rgb(240, 109, 8);
+        border-collapse: collapse;
+    }
+    </style>
+</head>
+
+<body style="text-align: center">
+    <table style="inline-size:95%">
+        <thead>
+            <tr style="height:120px">
+                <th style="width:10%">Id</th>
+                <th style="width:18%">Name</th>
+                <th style="width:18%">Department</th>
+                <th style="width:14%">Roll Number</th>
+                <th style="width:20%">Birth Date</th>
+                <th style="width:20%">Mobile Number</th>
+            </tr>
+        </thead>
+        <tbody style="height:60px">
+            <tr *ngFor="let students of students">
+                <td>{{students.id}}</td> 
+                <td>{{students.name}}</td>
+                <td>{{students.department}}</td>
+                <td>{{students.rollNumber}}</td>
+                <td>{{students.birthDate}}</td>
+                <td>{{students.mobileNumber }}</td>
+                              
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+ 
+</html>

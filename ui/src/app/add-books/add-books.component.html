@@ -1,0 +1,44 @@
+<div style="padding-left:100px;">
+    <h1>Add Books</h1>
+    
+    <form [formGroup]="booksForm" (ngSubmit)="saveBook()" >
+    
+    <!-- <label style="font-size:20px">Id </label>
+     <input type = "number" formControlName="Id"> -->
+           
+    <label style="font-size:20px">Title </label>
+    <input type = "text" formControlName="title">
+    
+    <label style="font-size:20px">Author </label>
+    <input type = "text" formControlName="author">
+    
+    <label style="font-size:20px">ISBN </label>
+    <input type = "text" formControlName="isbn">
+    
+    <label style="font-size:20px">Publication Date </label>
+    <input type = "text" formControlName="publicationDate">
+    
+    <label style="font-size:20px">Publisher </label>
+    <input type = "text" formControlName="publisher">
+    
+    <label style="font-size:20px">Copies </label>
+    <input type = "number" formControlName="copies">
+    
+    <label style="font-size:20px">Category </label>
+    <input type = "text" formControlName="category">
+    
+    <label style="font-size:20px">Genre </label>
+    <input type = "text" formControlName="genre">
+    
+    <label style="font-size:20px">Subgenre </label>
+    <input type = "text" formControlName="subgenre">
+    
+<div>
+<button type="submit">Save</button>
+</div>
+</form>
+     
+    </div> 
+
+    <h3>Form Status :{{booksForm.valid}}</h3>
+    <h3>Form json :{{booksForm.value | json}}</h3>

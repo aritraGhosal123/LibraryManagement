@@ -1,0 +1,52 @@
+h1{
+    padding:10px 10px 10px 10px;
+  }
+  
+  th {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  table{
+    overflow: auto;
+  }
+  
+  td {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+  }
+  
+  tr:nth-child(odd) {
+      background-color: #f3f28f;
+  }
+  
+  th {
+    background-color: hwb(57 0% 6%);
+    color: white;
+    font-size: 30px;
+  }
+  
+  
+  .button {
+    margin: 125px;
+    background-color: #e2e066; 
+    border: none;
+    color: white;
+    padding:20px 20px 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+  }
+  
+  
+  
+  .title-green{
+  color: green;
+  }
+  
+  .title-red{
+  color: red;
+  }
+   
