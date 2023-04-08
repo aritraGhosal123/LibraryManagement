@@ -21,18 +21,22 @@
     <table style="width:95%">
         <thead>
             <tr style="height:120px">
-                <th style="width:14%">Id</th>
+                <!-- //<th style="width:14%">Id</th> -->
                 <th style="width:22%">Birth Date</th>
                 <th style="width:22%">Name</th>
                 <th style="width:22%">Nationality</th>
+                <th style="width:22%">Delete</th>
             </tr>
         </thead>
         <tbody style="height:60px">
-          <tr *ngFor="let authors of authors">
-            <td>{{authors.id}}</td> 
-            <td>{{authors.birthDate}}</td>
-            <td>{{authors.name}}</td>
-            <td>{{authors.nationality}}</td>
+          <tr *ngFor="let author of authors">
+            <!-- <td>{{author.id}}</td>  -->
+            <td>{{author.birthDate}}</td>
+            <td>{{author.name}}</td>
+            <td>{{author.nationality}}</td>
+            <td>
+                <button (click)="deleteAuthor(author.id)">Delete</button>
+              </td>
           </tr>
         </tbody>
 

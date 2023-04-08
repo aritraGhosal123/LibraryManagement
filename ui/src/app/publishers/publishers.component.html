@@ -21,26 +21,28 @@
     <table style="inline-size:95%">
         <thead>
             <tr style="height:80px">
-                <th style="width:7%">Id</th>
+                <!-- <th style="width:7%">Id</th> -->
                 <th style="width:19%">Name</th>
                 <th style="width:50%">Address</th>
                 <th style="width:14%">Phone</th>
                 <th style="width:20%">Email</th>
+                <th style="width:8%">Delete</th>
                 
             </tr>
         </thead>
         <tbody style="height:60px">
-            <tr *ngFor="let publishers of publishers">
-              <td>{{publishers.id}}</td> 
-              <td>{{publishers.name}}</td> 
-              <td>{{publishers.address}}</td> 
-              <td>{{publishers.phone}}</td> 
-              <td>{{publishers.email}}</td> 
+            <tr *ngFor="let publisher of publishers">
+              <!-- <td>{{publisher.id}}</td>  -->
+              <td>{{publisher.name}}</td> 
+              <td>{{publisher.address}}</td> 
+              <td>{{publisher.phone}}</td> 
+              <td>{{publisher.email}}</td> 
+              <td>
+                <button (click)="deletePublisher(publisher.id)">Delete</button>
+            </td>
             
             </tr>
           </tbody>
       </table>
   </body>
   
-   
-  </html>

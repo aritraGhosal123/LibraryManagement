@@ -1,26 +1,30 @@
 <div style="padding-left:100px;">
     <h1>Add Publishers</h1>
     
-    <form>
+    <form [formGroup]="publishersForm" (ngSubmit)="savePublisher()">
     
-    <label style="font-size:20px">Id </label>
-    <input type = "text" formControlName="Id">
+    <!-- <label style="font-size:30px">Id </label>
+    <input type = "text" formControlName="id"> -->
     
-    <label style="font-size:20px">Name </label>
-    <input type = "text" formControlName="Name">
+    <label style="font-size:30px">Name </label>
+    <input type = "text" formControlName="name">
     
-    <label style="font-size:20px">Address </label>
-    <input type = "text" formControlName="Address">
+    <label style="font-size:30px">Address </label>
+    <input type = "text" formControlName="address">
     
-    <label style="font-size:20px">Phone </label>
-    <input type = "text" formControlName="Phone">
+    <label style="font-size:30px">Phone </label>
+    <input type = "text" formControlName="phone">
 
-    <label style="font-size:20px">Email </label>
-    <input type = "email" formControlName="Email">
+    <label style="font-size:30px">Email </label>
+    <input type = "email" formControlName="email">
     
-       
-    
-    <input type = "submit" value="Save Publisher">
-    </form>
+    <div>
+        <button type="submit">Save</button>
+        </div>
+        </form>
      
-    </div>
+    </div> 
+
+
+<h3>  Form Status: {{publishersForm.valid}} </h3>
+<h3>  Form json: {{publishersForm.value | json}} </h3>
